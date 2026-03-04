@@ -3,6 +3,7 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 .utmp/
+<<<<<<< HEAD
 /ProyectoINICIAL/[Ll]ibrary/
 /ProyectoINICIAL/[Tt]emp/
 /ProyectoINICIAL/[Oo]bj/
@@ -10,6 +11,15 @@
 /ProyectoINICIAL/[Bb]uilds/
 /ProyectoINICIAL/[Ll]ogs/
 /ProyectoINICIAL/[Uu]ser[Ss]ettings/
+=======
+/proyectoINICIAL/[Ll]ibrary/
+/proyectoINICIAL/[Tt]emp/
+/proyectoINICIAL/[Oo]bj/
+/proyectoINICIAL/[Bb]uild/
+/proyectoINICIAL/[Bb]uilds/
+/proyectoINICIAL/[Ll]ogs/
+/proyectoINICIAL/[Uu]ser[Ss]ettings//
+>>>>>>> f0fda661d9edd2f9563fc8f0c82936b584901914
 *.log
 
 # MemoryCaptures can get excessive in size.
