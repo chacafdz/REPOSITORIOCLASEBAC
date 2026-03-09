@@ -5,21 +5,20 @@ using UnityEngine;
 public class HolaMundo : MonoBehaviour
 {
     int x;
+
     // Start is called before the first frame update
     void Start()
     {
-        x = 0;
-
-        print("algo paso");
-        Debug.LogWarning("algo salio mal");
-        Debug.LogError("algo salio muy mal");
-    }
+        x - 0;
+        print("Algo paso");
+        Debug.LogWarning("Algo salio medianamente mal");
+        Debug.LogError("Algo salio muy mal");
+    } // <-- The Start method ends here
 
     // Update is called once per frame
-    void Update()
+    void Update() // <-- Update should be OUTSIDE of Start
     {
-        x - x + 1;
-        Debug.Log(x);
-
+        x = x + 1;
+        Debug.Log("Algo paso");
     }
 }
