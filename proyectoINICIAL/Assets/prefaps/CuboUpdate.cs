@@ -12,6 +12,14 @@ public class CuboUpdate : MonoBehaviour
             Random.Range(-5f, 5f),
             Random.Range(-5f, 5f)
         );
-        Debug.Log("Cubo creado en Update()");
+
+        Renderer rend = cubo.GetComponent<Renderer>();
+        rend.material.color = new Color(
+            Random.value,
+            Random.value,
+            Random.value
+        );
+
+        Debug.Log("Cubo creado con color aleatorio en Update()");
     }
 }
