@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CuboAwake : MonoBehaviour
 {
+    public GameObject cuboPrefab;
+
     void Awake()
     {
-        GameObject cubo = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cubo.transform.position = new Vector3(0f, 0f, 0f);
+        GameObject cubo = Instantiate(cuboPrefab, new Vector3(0f, 0f, 0f), Quaternion.identity);
 
         Renderer rend = cubo.GetComponent<Renderer>();
         rend.material.color = new Color(
@@ -16,6 +17,6 @@ public class CuboAwake : MonoBehaviour
             Random.value
         );
 
-        Debug.Log("Cubo creado con color aleatorio en Awake()");
+        Debug.Log("Cubo instanciado con color aleatorio en Awake()");
     }
 }

@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class CuboUpdate : MonoBehaviour
 {
+    public GameObject cuboPrefab;
+
     void Update()
     {
-        GameObject cubo = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cubo.transform.position = new Vector3(
-            Random.Range(-5f, 5f),
-            Random.Range(-5f, 5f),
-            Random.Range(-5f, 5f)
+        GameObject cubo = Instantiate(
+            cuboPrefab,
+            new Vector3(
+                Random.Range(-5f, 5f),
+                Random.Range(-5f, 5f),
+                Random.Range(-5f, 5f)
+            ),
+            Quaternion.identity
         );
 
         Renderer rend = cubo.GetComponent<Renderer>();
@@ -20,6 +25,6 @@ public class CuboUpdate : MonoBehaviour
             Random.value
         );
 
-        Debug.Log("Cubo creado con color aleatorio en Update()");
+        Debug.Log("Cubo instanciado con color aleatorio en Update()");
     }
 }
