@@ -988,6 +988,7 @@ GameObject:
   - component: {fileID: 963194237}
   - component: {fileID: 963194236}
   - component: {fileID: 963194235}
+  - component: {fileID: 963194240}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1146,7 +1147,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98e6395ebf482874a8b1b56860ccc9c6, type: 3}
   m_Name: 
@@ -1159,7 +1160,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68b4e346398073b489acae22c9d751c0, type: 3}
   m_Name: 
@@ -1173,7 +1174,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f338f4f1205d0564c9065360cf127949, type: 3}
   m_Name: 
@@ -1188,7 +1189,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8e44930e771e564f888c93e58adff5d, type: 3}
   m_Name: 
@@ -1203,12 +1204,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d67e0ed3d1196f439801acb7df66b5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 0
+--- !u!114 &963194240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: badeac9b3ab951b4ab7673c160f817dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &999458001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3068695424504582438, guid: f635f2f1fdc56204aacce5ca0043b467, type: 3}
