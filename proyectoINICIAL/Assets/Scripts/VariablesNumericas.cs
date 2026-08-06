@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class VariablesNumericas : MonoBehaviour
 {
+    LayerMask myLayerMask = 1 >> 9 | 1 >> 8;
     sbyte miByteConSigno = 0;
     byte miByte = 0;
     short miShort = 0;
     ushort miShortSinSigno = 0;
     int miInt = 0;
     uint miIntSinSigno = 0;
-    long miLong = 0; 
+    long miLong = 0;
     ulong milongSinsigno = 0;
 
     // Start is called before the first frame update
@@ -30,7 +31,7 @@ public class VariablesNumericas : MonoBehaviour
         Debug.Log("el valor de miInt es: " + miInt);
         int a, b, c;
         a = 5;
-        b = 10; 
+        b = 10;
         c = a + b;
         Debug.Log(c);
         c = a * b;
@@ -46,6 +47,6 @@ public class VariablesNumericas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
